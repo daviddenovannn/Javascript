@@ -135,17 +135,37 @@
 
 // ini kasus lain jika team 1 mempunyai 3 anggota
 // pake kondisi team. Kasus nya sama hanya beda pada penyebutan key nua
-// const gembalaSenior = [
-//     ['Jones', 'Donald', 'Anang'],
-//     ['Kepas', 'Fandy', 'Frengky'],
-//     ['ucok', 'seto', 'Martin'],
-// ];
+const gembalaSenior = [
+    ['Jones', 'Donald', 'Anang'],
+    ['Kepas', 'Fandy', 'Frengky'],
+    ['ucok', 'seto', 'Martin'],
+];
 
 // for (i = 0; i < gembalaSenior.length; i++) {
 //     const team = gembalaSenior[i];
 //     console.log(`team #${i}`);
 //     for (let j = 0; j < team.length; j++) {
 //         console.log(`  ${team[j]}`);
+//     }
+// }
+
+// for (g = 0; g < gembalaSenior.length; g++) {
+//     const domba = gembalaSenior[g];
+//     console.log(`domba ${g + 1}`);
+//     for (let p = 0; p < domba.length; p++) {
+//         console.log(`  ${domba[p]}`);
+//     }
+// }
+
+// for (let jemaat of gembalaSenior) {
+//     for (let gereja of jemaat) {
+//         console.log(`G ${gereja}`)
+//     }
+// }
+
+// for (let domba of gembalaSenior) {
+//     for (let gereja of domba) {
+//         console.log(gereja)
 //     }
 // }
 
@@ -194,27 +214,43 @@
 // }
 
 
-
 // membuat game tebak tebakan angka
-let maximal = parseInt(prompt('Masukkan nilai maksimal'));
+// let maximal = parseInt(prompt('Masukkan nilai maksimal'));
 
-while (!maximal) {
-    maximal = parseInt(prompt('Masukkan nilai maksimal'));
-}
+// while (!maximal) {
+//     maximal = parseInt(prompt('Masukkan nilai maksimal'));
+// }
+// const targetAngka = Math.floor(Math.random() * maximal) + 1;
+// console.log(targetAngka);
 
-const targetAngka = Math.floor(Math.random() * maximal) + 1;
-console.log(targetAngka);
 
-let tebak = parseInt(prompt('isikan tebakan angka kamu!'));
-let coba = 1;
+// let tebak = parseInt(prompt('isikan tebakan angka kamu!'));
+// let coba = 1;
 
-while (parseInt(tebak) !== targetAngka) {
-    coba++;
-    if (tebak > targetAngka) {
-        tebak = parseInt(prompt('Angkanya terlalu besar, tebak lagi !'));
-    } else {
-        tebak = parseInt(prompt('Angkanya terlalu kecil, tebak lagi !'));
-    }
-}
+// while (parseInt(tebak) !== targetAngka) {
+//     coba++;
+//     if (tebak > targetAngka) {
+//         tebak = parseInt(prompt('Angkanya terlalu besar, tebak lagi !'));
+//     } else {
+//         tebak = parseInt(prompt('Angkanya terlalu kecil, tebak lagi !'));
+//     }
+// }
 
-alert(`WOW!! Selamat, Tebakan angka anda benar! Anda sudah mencoba sebanyak ${coba} kali`)
+// alert(`WOW!! Selamat, Tebakan angka anda benar! Anda sudah mencoba sebanyak ${coba} kali`)
+
+
+
+// array for of
+
+//tarolah terlebih dahulu dsni kita menggunakan for biasa
+
+// const buah = ['mangga', 'melon', 'duku']
+
+// for (let i = 0; i < buah.length; i++) {
+//     console.log(buah[i]);
+// }
+
+
+// for (i of buah) {
+//     console.log(i)
+// }
