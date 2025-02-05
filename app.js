@@ -178,3 +178,43 @@
 // }
 
 // alert('Selamat email anda sudah benar')
+
+
+// let input = prompt('kata kata nya hari ini mas coding');
+// while (true) {
+//     input = prompt(input);(
+//     if (input.toLocaleLowerCase === 'stop') break;
+// }
+// alert('selamat berhasil menyestop kan')
+
+
+// for (let j = 0; j < 11000; j++) {
+//     console.log(j);
+//     if (j === 100) break;
+// }
+
+
+
+// membuat game tebak tebakan angka
+let maximal = parseInt(prompt('Masukkan nilai maksimal'));
+
+while (!maximal) {
+    maximal = parseInt(prompt('Masukkan nilai maksimal'));
+}
+
+const targetAngka = Math.floor(Math.random() * maximal) + 1;
+console.log(targetAngka);
+
+let tebak = parseInt(prompt('isikan tebakan angka kamu!'));
+let coba = 1;
+
+while (parseInt(tebak) !== targetAngka) {
+    coba++;
+    if (tebak > targetAngka) {
+        tebak = parseInt(prompt('Angkanya terlalu besar, tebak lagi !'));
+    } else {
+        tebak = parseInt(prompt('Angkanya terlalu kecil, tebak lagi !'));
+    }
+}
+
+alert(`WOW!! Selamat, Tebakan angka anda benar! Anda sudah mencoba sebanyak ${coba} kali`)
