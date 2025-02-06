@@ -135,19 +135,11 @@
 
 // ini kasus lain jika team 1 mempunyai 3 anggota
 // pake kondisi team. Kasus nya sama hanya beda pada penyebutan key nua
-const gembalaSenior = [
-    ['Jones', 'Donald', 'Anang'],
-    ['Kepas', 'Fandy', 'Frengky'],
-    ['ucok', 'seto', 'Martin'],
-];
-
-// for (i = 0; i < gembalaSenior.length; i++) {
-//     const team = gembalaSenior[i];
-//     console.log(`team #${i}`);
-//     for (let j = 0; j < team.length; j++) {
-//         console.log(`  ${team[j]}`);
-//     }
-// }
+// const gembalaSenior = [
+//     ['Jones', 'Donald', 'Anang'],
+//     ['Kepas', 'Fandy', 'Frengky'],
+//     ['ucok', 'seto', 'Martin'],
+// ];
 
 // for (g = 0; g < gembalaSenior.length; g++) {
 //     const domba = gembalaSenior[g];
@@ -162,6 +154,14 @@ const gembalaSenior = [
 //         console.log(`G ${gereja}`)
 //     }
 // }
+// for (i = 0; i < gembalaSenior.length; i++) {
+//     const team = gembalaSenior[i];
+//     console.log(`team #${i}`);
+//     for (let j = 0; j < team.length; j++) {
+//         console.log(`  ${team[j]}`);
+//     }
+// }
+
 
 // for (let domba of gembalaSenior) {
 //     for (let gereja of domba) {
@@ -254,3 +254,26 @@ const gembalaSenior = [
 // for (i of buah) {
 //     console.log(i)
 // }
+
+
+const buyerShoes = {
+    agus: 42,
+    rian: 44,
+    epen: 46,
+    baconk: 40,
+    ujang: 41,
+};
+
+// versi mengeluarkan data dari object menggunakan for in
+for (let size in buyerShoes) {
+    console.log(`${size} memiliki size sepatu ${buyerShoes[size]}`)
+}
+
+//size sepatunya sudah dapat kemudian kita buat rata rata dari size sepatunya.
+// mengubah data objet menjadi array kemudian data array nya di ambil rata ratany
+let average = 0;
+let size = Object.values(buyerShoes);
+for (let sizes of size) {
+    average += sizes;
+}
+console.log(average / size.length) //outputnya pasti 42.6
