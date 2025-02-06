@@ -256,24 +256,69 @@
 // }
 
 
-const buyerShoes = {
-    agus: 42,
-    rian: 44,
-    epen: 46,
-    baconk: 40,
-    ujang: 41,
-};
+// const buyerShoes = {
+//     agus: 42,
+//     rian: 44,
+//     epen: 46,
+//     baconk: 40,
+//     ujang: 41,
+// };
 
-// versi mengeluarkan data dari object menggunakan for in
-for (let size in buyerShoes) {
-    console.log(`${size} memiliki size sepatu ${buyerShoes[size]}`)
-}
+// // versi mengeluarkan data dari object menggunakan for in
+// for (let size in buyerShoes) {
+//     console.log(`${size} memiliki size sepatu ${buyerShoes[size]}`)
+// }
 
-//size sepatunya sudah dapat kemudian kita buat rata rata dari size sepatunya.
-// mengubah data objet menjadi array kemudian data array nya di ambil rata ratany
-let average = 0;
-let size = Object.values(buyerShoes);
-for (let sizes of size) {
-    average += sizes;
+// //size sepatunya sudah dapat kemudian kita buat rata rata dari size sepatunya.
+// // mengubah data objet menjadi array kemudian data array nya di ambil rata ratany
+// let average = 0;
+// let size = Object.values(buyerShoes);
+// for (let sizes of size) {
+//     average += sizes;
+// }
+// console.log(average / size.length) //outputnya pasti 42.6
+
+
+// // menggabungkan parameter,function, dan argument didalam prompt
+// function menyapa(name) {
+//     console.log(`Hallo ${name} Selamat pagi, Selamat beraktifitas `);
+// };
+// //menyapa('David')
+// menyapa(prompt('Masukkan Nama yang ingin disapa'))
+
+// function tambah(a, b) {
+//     if (typeof a !== 'number' || typeof b !== 'number') {
+//         return 'bukan angka';
+//     }
+//     return a + b;
+//     //     const total = a + b;
+//     //     return total;
+//     //     console.log
+// }
+
+//variabel sesuai scope atau ruang lingkup
+// let programming = 'javascript';
+
+// function code() {
+//     programming = 'typescript';
+//     console.log(programming)
+// }
+
+// code();
+// console.log(programming)
+
+//blocked scope variabel
+
+let tinggi = 8;
+
+if (tinggi > 5) {
+    tinggi = 10;
 }
-console.log(average / size.length) //outputnya pasti 42.6
+console.log(tinggi)
+
+
+for (index = 0; index < 10; index++) {
+    var indexNumber = index;
+    // console.log(indexNumber)
+}
+console.log(indexNumber)
