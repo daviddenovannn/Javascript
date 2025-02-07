@@ -359,13 +359,34 @@
 
 // function sebagai argument function lain
 
-function lemparDadu(func) {
-    func();
-    func();
-}
+// function lemparDadu(func) {
+//     func();
+//     func();
+// }
 
-function duaKali() {
-    const hasil = Math.floor(Math.random() * 6) + 1;
-    console.log(hasil);
+// function duaKali() {
+//     const hasil = Math.floor(Math.random() * 6) + 1;
+//     console.log(hasil);
+// }
+// lemparDadu(duaKali) 
+
+
+// dari sini ketauan bahwa nilai return bisa membalikan suatu function
+// juga bisa melakukan nilai balik, jadi tidak melulu tipe data.
+function matRandom() {
+    const rand = Math.random()
+    if (rand > 0.1) {
+        return function () {
+            console.log('Wah hasil nya besar sekali');
+        };
+    } else {
+        return function () {
+            console.log('yah hasil nya kekecilan nich');
+        }; //karna hasil nya sekrang di console(tools web browser ini) function
+        // jadi bagaimana supaya nilainya keluar??
+        // perlu function nya ini di jadikan variabel terlebih dahulu kemudian..
+        // nilainya dikeluarkan dengan memanggil variabel nya.
+        // let hasil = matRandom()
+        // hasil()
+    }
 }
-lemparDadu(duaKali)
