@@ -324,16 +324,34 @@
 // console.log(indexNumber)
 
 //lexical scope
-function lamarkerja() {
-    const programmer = 'FrontEnd';
-    function testing() {
+// function lamarkerja() {
+//     const programmer = 'FrontEnd';
+//     function testing() {
 
-        function infoLoker() {
-            let loker = `Perusahaan A sedang mencari seseorang ${programmer}`;
-            console.log(loker)
-        }
+//         function infoLoker() {
+//             let loker = `Perusahaan A sedang mencari seseorang ${programmer}`;
+//             console.log(loker)
+//         }
 
-        infoLoker()
-    }
-    testing()
-}
+//         infoLoker()
+//     }
+//     testing()
+// }
+
+
+// FUNCTION EXSPRESSION
+// versi 1
+function perkalian(nilai) {
+    return nilai * nilai;
+};
+
+let hasil = perkalian(5);
+console.log(hasil);
+
+// versi 2
+const pembagian = function (nilai, pembanding) {
+    return nilai * pembanding;
+};
+pembagian(5, 2);
+
+//jadi function exspression ini bisa memperbanyak parameter
