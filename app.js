@@ -341,17 +341,31 @@
 
 // FUNCTION EXSPRESSION
 // versi 1
-function perkalian(nilai) {
-    return nilai * nilai;
-};
+// function perkalian(nilai) {
+//     return nilai * nilai;
+// };
 
-let hasil = perkalian(5);
-console.log(hasil);
+// let hasil = perkalian(5);
+// console.log(hasil);
 
-// versi 2
-const pembagian = function (nilai, pembanding) {
-    return nilai * pembanding;
-};
-pembagian(5, 2);
+// // versi 2
+// const pembagian = function (nilai, pembanding) {
+//     return nilai * pembanding;
+// };
+// pembagian(5, 2);
 
 //jadi function exspression ini bisa memperbanyak parameter
+
+
+// function sebagai argument function lain
+
+function lemparDadu(func) {
+    func();
+    func();
+}
+
+function duaKali() {
+    const hasil = Math.floor(Math.random() * 6) + 1;
+    console.log(hasil);
+}
+lemparDadu(duaKali)
