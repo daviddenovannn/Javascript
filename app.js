@@ -309,16 +309,31 @@
 
 //blocked scope variabel
 
-let tinggi = 8;
+// let tinggi = 8;
 
-if (tinggi > 5) {
-    tinggi = 10;
+// if (tinggi > 5) {
+//     tinggi = 10;
+// }
+// console.log(tinggi)
+
+
+// for (index = 0; index < 10; index++) {
+//     var indexNumber = index;
+//     // console.log(indexNumber)
+// }
+// console.log(indexNumber)
+
+//lexical scope
+function lamarkerja() {
+    const programmer = 'FrontEnd';
+    function testing() {
+
+        function infoLoker() {
+            let loker = `Perusahaan A sedang mencari seseorang ${programmer}`;
+            console.log(loker)
+        }
+
+        infoLoker()
+    }
+    testing()
 }
-console.log(tinggi)
-
-
-for (index = 0; index < 10; index++) {
-    var indexNumber = index;
-    // console.log(indexNumber)
-}
-console.log(indexNumber)
