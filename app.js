@@ -393,11 +393,26 @@
 
 // medefinisikan sebuah method dalam javascript
 
-const MyMath = {
-    perkalian: function (x, y) {
-        return x * y;
-    },
-};
+// const MyMath = {
+//     perkalian: function (x, y) {
+//         return x * y;
+//     },
+// };
 // pas memanggil nya perlu di ingatkan ialah
 // dengan cara nama object kemudian nama method nya
 // contoh : MyMath.perkalian
+
+// mendefinisikan this di javascript
+// this adalah keyword untuk memanggil property
+// pada object yang sama
+// tujuan nya untuk memanggil nilainya
+
+const saya = {
+    nama: 'David',
+    umur: 24,
+    hobi: 'Olahraga',
+    perkenalkan: function () {
+        return `Hai, Perkenalkan. Nama Saya ${this.nama}, saat ini saya berumur ${this.umur}. Saya sangat suka sekali ${this.hobi}`
+    }
+
+};
