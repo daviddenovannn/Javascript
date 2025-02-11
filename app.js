@@ -407,12 +407,23 @@
 // pada object yang sama
 // tujuan nya untuk memanggil nilainya
 
-const saya = {
-    nama: 'David',
-    umur: 24,
-    hobi: 'Olahraga',
-    perkenalkan: function () {
-        return `Hai, Perkenalkan. Nama Saya ${this.nama}, saat ini saya berumur ${this.umur}. Saya sangat suka sekali ${this.hobi}`
-    }
+// const saya = {
+//     nama: 'David',
+//     umur: 24,
+//     hobi: 'Olahraga',
+//     perkenalkan: function () {
+//         return `Hai, Perkenalkan. Nama Saya ${this.nama}, saat ini saya berumur ${this.umur}. Saya sangat suka sekali ${this.hobi}`
+//     }
 
-};
+// }; 
+
+
+//implementasi try n catch
+function teriak(msg) {
+    try {
+        console.log(msg.toUpperCase())
+    } catch (error) {
+        console.log(error);
+        console.log('silakan masukkan tipe data string pada argument teriak()');
+    }
+}
