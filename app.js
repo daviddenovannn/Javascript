@@ -415,15 +415,67 @@
 //         return `Hai, Perkenalkan. Nama Saya ${this.nama}, saat ini saya berumur ${this.umur}. Saya sangat suka sekali ${this.hobi}`
 //     }
 
-// }; 
+// };
 
 
 //implementasi try n catch
-function teriak(msg) {
-    try {
-        console.log(msg.toUpperCase())
-    } catch (error) {
-        console.log(error);
-        console.log('silakan masukkan tipe data string pada argument teriak()');
-    }
-}
+// function teriak(msg) {
+//     try {
+//         console.log(msg.toUpperCase())
+//     } catch (error) {
+//         console.log(error);
+//         console.log('silakan masukkan tipe data string pada argument teriak()');
+//     }
+// }
+
+
+// implementasi forEach method
+
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// angka.forEach(function (n) {
+//     console.log(n * n)
+// }) meng kali kan dengan diri nya sendiri.
+
+// const angka = [1, 2, 3, 4, 5, 6, 7];
+
+// function cetak(element) {
+//     console.log(element);
+// }
+
+// angka.forEach(cetak) //hasil nya ber urutan sesuai array
+
+
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// angka.forEach(function (el) {
+//     if (el % 2 === 0) {
+//         console.log(el)
+//     }
+// });
+
+
+const movies = [
+    {
+
+        title: 'jandara',
+        rating: 85,
+    },
+    {
+
+        title: 'Pengabdi Badut',
+        rating: 70,
+    },
+    {
+
+        title: 'Kkr Desa durian runtuh ',
+        rating: 65,
+    },
+    {
+
+        title: '365',
+        rating: 90,
+    },
+];
+movies.forEach(function (movie) {
+    console.log(`${movie.title} - ${movie.rating} / 100`);
+});
