@@ -483,11 +483,46 @@ const movies = [
 
 //menambahkan map method
 
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
-const angkaLipat = angka.map(function (no) {
-    return no * 2;
-});
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+// const angkaLipat = angka.map(function (no) {
+//     return no * 2;
+// });
 
-const cinema = movies.map(function (movie) {
-    return movie.rating;
-});
+// const cinema = movies.map(function (movie) {
+//     return movie.rating;
+// }); 
+
+
+
+// arrow function session
+//function biasa
+// const pembagian = (p) => {
+//     return p / p;
+// }
+// pembagian(5)
+
+// //function exspression
+// const hasil = function (x) {
+//     return x + x;
+// }
+// hasil(5)
+
+
+//arrow function
+// arrow function ini hampir sama degan funciton exspression
+
+// const perhitungan = (n) => { // menggunakan dalam kurung
+//     return n * n;
+// }
+// perhitungan(6) 
+
+// const perhitungan = n => { // bisa aja ga didalam kurung kalo parameter nya 1 aj
+//     return n * n; // tapi kalo parameter ya 2 wajib pake dalam kurung
+// }
+// perhitungan(6) 
+
+// studi kasus parameter nya itu null atau spasi aje
+
+const random = () => {
+    return Math.floor(Math.random() * 1000)
+}
