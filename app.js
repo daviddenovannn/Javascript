@@ -476,6 +476,18 @@ const movies = [
         rating: 90,
     },
 ];
-movies.forEach(function (movie) {
-    console.log(`${movie.title} - ${movie.rating} / 100`);
+// movies.forEach(function (movie) {
+//     console.log(`${movie.title} - ${movie.rating} / 100`);
+// });
+
+
+//menambahkan map method
+
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+const angkaLipat = angka.map(function (no) {
+    return no * 2;
+});
+
+const cinema = movies.map(function (movie) {
+    return movie.rating;
 });
