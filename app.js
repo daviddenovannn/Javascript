@@ -490,7 +490,7 @@ const movies = [
 
 // const cinema = movies.map(function (movie) {
 //     return movie.rating;
-// }); 
+// });
 
 
 
@@ -514,20 +514,38 @@ const movies = [
 // const perhitungan = (n) => { // menggunakan dalam kurung
 //     return n * n;
 // }
-// perhitungan(6) 
+// perhitungan(6)
 
 // const perhitungan = n => { // bisa aja ga didalam kurung kalo parameter nya 1 aj
 //     return n * n; // tapi kalo parameter ya 2 wajib pake dalam kurung
 // }
-// perhitungan(6) 
+// perhitungan(6)
 
 // studi kasus parameter nya itu null atau spasi aje
 
 
 // return secara implisit pakai scope kurung biasa dan tidak menggunakan return
-const random = () => (
-    Math.floor(Math.random() * 1000)
-)
+// const random = () => (
+//     Math.floor(Math.random() * 1000)
+// )
 
 // return secara implisit dengan 1 line aja
-const acak = () => Math.floor(Math.random() / 10)
+// const acak = () => Math.floor(Math.random() / 10)
+
+
+// menerapkan setTimeout
+console.log('hai kamuuu')
+setTimeout(() => {
+    console.log('kalau aku chat ada yang marah gak?')
+}, 3000);
+
+
+//menerapkan setInterval
+console.log('hai bales dong')
+setInterval(() => {
+    console.log('woi')
+}, 2000)
+
+setInterval(() => {
+    console.log(Math.random())
+}, 5000)
