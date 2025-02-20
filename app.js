@@ -523,6 +523,11 @@ const movies = [
 
 // studi kasus parameter nya itu null atau spasi aje
 
-const random = () => {
-    return Math.floor(Math.random() * 1000)
-}
+
+// return secara implisit pakai scope kurung biasa dan tidak menggunakan return
+const random = () => (
+    Math.floor(Math.random() * 1000)
+)
+
+// return secara implisit dengan 1 line aja
+const acak = () => Math.floor(Math.random() / 10)
