@@ -534,18 +534,18 @@ const movies = [
 
 
 // menerapkan setTimeout
-console.log('hai kamuuu')
-setTimeout(() => {
-    console.log('kalau aku chat ada yang marah gak?')
-}, 3000);
+// console.log('hai kamuuu')
+// setTimeout(() => {
+//     console.log('kalau aku chat ada yang marah gak?')
+// }, 3000);
 
 
-//menerapkan setInterval
-console.log('hai bales dong')
-setInterval(() => {
-    console.log('woi')
-}, 2000)
+// //menerapkan setInterval
+// console.log('hai bales dong')
+// setInterval(() => {
+//     console.log('woi')
+// }, 2000)
 
-setInterval(() => {
-    console.log(Math.random())
-}, 5000)
+// setInterval(() => {
+//     console.log(Math.random())
+// }, 5000)
