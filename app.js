@@ -490,7 +490,7 @@ const moviesRating = movies.filter((movie) => {
     }
 })
 
-const moviesTittle = movie.filter((movie) => {
+const moviesTittle = movies.filter((movie) => {
 
 })
 
