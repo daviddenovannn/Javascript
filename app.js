@@ -459,23 +459,42 @@ const movies = [
 
         title: 'jandara',
         rating: 85,
+        year: 2005,
     },
     {
 
         title: 'Pengabdi Badut',
         rating: 70,
+        year: 2011,
     },
     {
 
         title: 'Kkr Desa durian runtuh ',
         rating: 65,
+        year: 2012,
     },
     {
 
         title: '365',
         rating: 90,
+        year: 2024,
     },
 ];
+
+// contoh nih mau menampilkan angka rating dari daftar film diatas
+// pakai keterangan juga.
+const moviesRating = movies.filter((movie) => {
+    // return movie.rating >= 80;
+    if (movie.rating >= 80) {
+        console.log(`movie yang bagus itu ${movie.title} dengan rating ${movie.rating}`)
+    }
+})
+
+const moviesTittle = movie.filter((movie) => {
+
+})
+
+
 // movies.forEach(function (movie) {
 //     console.log(`${movie.title} - ${movie.rating} / 100`);
 // });
@@ -549,3 +568,22 @@ const movies = [
 // setInterval(() => {
 //     console.log(Math.random())
 // }, 5000)
+
+
+
+
+
+// memilih data dalam array pake filter method
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+const angkaGanjil = angka.filter((n) => {
+    // return n % 2 === 1; //jika di modulus 2 dan hasil nya 1 maka itu adalah ganjil
+    // kenapa  ' % ' karna itu adalah simbol dari modulus
+
+
+    // contoh kondisi lain, misalkan tampilkan angka yang dibawha 5
+    // return n < 5;
+
+    //tampilkan angka yang diaatas 5
+    // return n > 5;
+})
+
