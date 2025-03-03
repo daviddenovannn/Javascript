@@ -486,11 +486,14 @@ const movies = [
 const moviesRating = movies.filter((movie) => {
     // return movie.rating >= 80;
     if (movie.rating >= 80) {
-        console.log(`movie yang bagus itu ${movie.title} dengan rating ${movie.rating}`)
+        console.log(`movie yang bagus itu ${movie.title} dengan rating ${movie.rating} dengan tahun ${movie.year}`)
     }
 })
 
-const moviesTittle = movies.filter((movie) => {
+const moviesTitle = movies.filter((film) => {
+    if (film.year > 2015) {
+        console.log(`Movie modern adalah ${film.year} dengan rating ${film.rating} yang berjudul ${film.title}`);
+    }
 
 })
 
@@ -502,8 +505,8 @@ const moviesTittle = movies.filter((movie) => {
 
 //menambahkan map method
 
-// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
-// const angkaLipat = angka.map(function (no) {
+// const hitungan = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+// const angkaLipat = hitungan.map(function (no) {
 //     return no * 2;
 // });
 
