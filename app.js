@@ -454,48 +454,48 @@
 // });
 
 
-const movies = [
-    {
+// const movies = [
+//     {
 
-        title: 'jandara',
-        rating: 85,
-        year: 2005,
-    },
-    {
+//         title: 'jandara',
+//         rating: 85,
+//         year: 2005,
+//     },
+//     {
 
-        title: 'Pengabdi Badut',
-        rating: 70,
-        year: 2011,
-    },
-    {
+//         title: 'Pengabdi Badut',
+//         rating: 70,
+//         year: 2011,
+//     },
+//     {
 
-        title: 'Kkr Desa durian runtuh ',
-        rating: 65,
-        year: 2012,
-    },
-    {
+//         title: 'Kkr Desa durian runtuh ',
+//         rating: 65,
+//         year: 2012,
+//     },
+//     {
 
-        title: '365',
-        rating: 90,
-        year: 2024,
-    },
-];
+//         title: '365',
+//         rating: 90,
+//         year: 2024,
+//     },
+// ];
 
 // contoh nih mau menampilkan angka rating dari daftar film diatas
 // pakai keterangan juga.
-const moviesRating = movies.filter((movie) => {
-    // return movie.rating >= 80;
-    if (movie.rating >= 80) {
-        console.log(`movie yang bagus itu ${movie.title} dengan rating ${movie.rating} dengan tahun ${movie.year}`)
-    }
-})
+// const moviesRating = movies.filter((movie) => {
+//     // return movie.rating >= 80;
+//     if (movie.rating >= 80) {
+//         console.log(`movie yang bagus itu ${movie.title} dengan rating ${movie.rating} dengan tahun ${movie.year}`)
+//     }
+// })
 
-const moviesTitle = movies.filter((film) => {
-    if (film.year > 2015) {
-        console.log(`Movie modern adalah ${film.year} dengan rating ${film.rating} yang berjudul ${film.title}`);
-    }
+// const moviesTitle = movies.filter((film) => {
+//     if (film.year > 2015) {
+//         console.log(`Movie modern adalah ${film.year} dengan rating ${film.rating} yang berjudul ${film.title}`);
+//     }
 
-})
+// })
 
 
 // movies.forEach(function (movie) {
@@ -577,16 +577,54 @@ const moviesTitle = movies.filter((film) => {
 
 
 // memilih data dalam array pake filter method
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
-const angkaGanjil = angka.filter((n) => {
-    // return n % 2 === 1; //jika di modulus 2 dan hasil nya 1 maka itu adalah ganjil
-    // kenapa  ' % ' karna itu adalah simbol dari modulus
+// const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+// const angkaGanjil = angka.filter((n) => {
+// return n % 2 === 1; //jika di modulus 2 dan hasil nya 1 maka itu adalah ganjil
+// kenapa  ' % ' karna itu adalah simbol dari modulus
 
 
-    // contoh kondisi lain, misalkan tampilkan angka yang dibawha 5
-    // return n < 5;
+// contoh kondisi lain, misalkan tampilkan angka yang dibawha 5
+// return n < 5;
 
-    //tampilkan angka yang diaatas 5
-    // return n > 5;
-})
+//tampilkan angka yang diaatas 5
+// return n > 5;
+// })
+
+
+
+
+//MECOBA METHOD EVERY DAN SOME
+
+const animes = [
+    {
+        title: 'Boku no pico',
+        year: 1999,
+        rating: 75,
+    },
+    {
+        title: 'Movie Red One Piece',
+        year: 2023,
+        rating: 89,
+    },
+    {
+        title: 'Boku No Hero Academy',
+        year: 2021,
+        rating: 85,
+    },
+    {
+        title: 'Naruto Shippuden',
+        year: 2000,
+        rating: 90,
+    },
+];
+
+const animeOverrated = animes.some((anime) => anime.year <= 10);
+
+
+
+// versi every method
+
+const nilai = [80, 90, 95, 77];
+const nilaiA = nilai.some((score) => score >= 70);
+
 
