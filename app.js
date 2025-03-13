@@ -595,36 +595,53 @@
 
 //MECOBA METHOD EVERY DAN SOME
 
-const animes = [
-    {
-        title: 'Boku no pico',
-        year: 1999,
-        rating: 75,
-    },
-    {
-        title: 'Movie Red One Piece',
-        year: 2023,
-        rating: 89,
-    },
-    {
-        title: 'Boku No Hero Academy',
-        year: 2021,
-        rating: 85,
-    },
-    {
-        title: 'Naruto Shippuden',
-        year: 2000,
-        rating: 90,
-    },
-];
+// const animes = [
+//     {
+//         title: 'Boku no pico',
+//         year: 1999,
+//         rating: 75,
+//     },
+//     {
+//         title: 'Movie Red One Piece',
+//         year: 2023,
+//         rating: 89,
+//     },
+//     {
+//         title: 'Boku No Hero Academy',
+//         year: 2021,
+//         rating: 85,
+//     },
+//     {
+//         title: 'Naruto Shippuden',
+//         year: 2000,
+//         rating: 90,
+//     },
+// ];
 
-const animeOverrated = animes.some((anime) => anime.year <= 10);
+// const animeOverrated = animes.some((anime) => anime.year <= 10);
 
 
 
 // versi every method
 
-const nilai = [80, 90, 95, 77];
-const nilaiA = nilai.some((score) => score >= 70);
+// const nilai = [80, 90, 95, 77];
+// const nilaiA = nilai.some((score) => score >= 70);
+
+
+// mengimplementasikan reduce method
+
+
+const nama = ['david', 'donovan', 'morandy', 'samosir'];
+
+const NamaLengkap = nama.reduce((perNama, namaYangAd) => {
+    return perNama + " " + namaYangAd;
+},);
+
+
+const subTotal = [10, 20, 30, 40, 50];
+
+const total = subTotal.reduce((currentTotal, subTotalNow) => {
+    return currentTotal + subTotalNow;
+})
 
 
