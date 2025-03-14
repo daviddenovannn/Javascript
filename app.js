@@ -631,47 +631,58 @@
 // mengimplementasikan reduce method
 
 
-const nama = ['david', 'donovan', 'morandy', 'samosir'];
+// const nama = ['david', 'donovan', 'morandy', 'samosir'];
 
-const NamaLengkap = nama.reduce((perNama, namaYangAd) => {
-    return perNama + " " + namaYangAd;
-},);
-
-
-const subTotal = [10, 20, 30, 40, 50];
-
-const total = subTotal.reduce((currentTotal, subTotalNow) => {
-    return currentTotal + subTotalNow;
-})
+// const NamaLengkap = nama.reduce((perNama, namaYangAd) => {
+//     return perNama + " " + namaYangAd;
+// },);
 
 
-const animes = [
-    {
-        title: 'Boku no pico',
-        year: 1999,
-        rating: 75,
+// const subTotal = [10, 20, 30, 40, 50];
+
+// const total = subTotal.reduce((currentTotal, subTotalNow) => {
+//     return currentTotal + subTotalNow;
+// })
+
+
+// const animes = [
+//     {
+//         title: 'Boku no pico',
+//         year: 1999,
+//         rating: 75,
+//     },
+//     {
+//         title: 'Movie Red One Piece',
+//         year: 2023,
+//         rating: 89,
+//     },
+//     {
+//         title: 'Boku No Hero Academy',
+//         year: 2021,
+//         rating: 85,
+//     },
+//     {
+//         title: 'Naruto Shippuden',
+//         year: 2000,
+//         rating: 90,
+//     },
+// ];
+
+// const rateAnime = animes.reduce((rateAnime, curAnime) => {
+//     console.log(rateAnime, curAnime) // menampilkan proses nya
+//     if (curAnime.rating > rateAnime.rating) {
+//         return curAnime;
+//     }
+//     return rateAnime;
+// });
+
+//object this di dalam arrow function mengarah pada object global window
+
+const person = {
+    firstName: "David",
+    lastName: "Donovan ",
+    fullName: () => {
+        console.log(this);
+        return `${this.firstName} ${this.lastName}`;
     },
-    {
-        title: 'Movie Red One Piece',
-        year: 2023,
-        rating: 89,
-    },
-    {
-        title: 'Boku No Hero Academy',
-        year: 2021,
-        rating: 85,
-    },
-    {
-        title: 'Naruto Shippuden',
-        year: 2000,
-        rating: 90,
-    },
-];
-
-const rateAnime = animes.reduce((rateAnime, curAnime) => {
-    console.log(rateAnime, curAnime) // menampilkan proses nya 
-    if (curAnime.rating > rateAnime.rating) {
-        return curAnime;
-    }
-    return rateAnime;
-});
+};
