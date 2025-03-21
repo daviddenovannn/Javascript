@@ -695,3 +695,17 @@
 // };
 // jadi supaya tidak memanggil object window atau global.
 // maka baiknya harus menggunakan regular function saja.
+
+// mengatur default valaue pada function 
+
+function lemparDadu(sisi) { //(sisi = 6 ) // kalau default
+    return Math.floor(Math.random() * sisi) + 1;
+}
+// nah ini blm menaru nilai default kedalam parameter nya.
+
+
+//contoh yang nilai defaultny sudah ada
+
+function menyapa(name = 'donovan', greet = 'ganteng') {
+    console.log(`${greet}, ${name}`);
+}
