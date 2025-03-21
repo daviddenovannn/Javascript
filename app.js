@@ -678,11 +678,20 @@
 
 //object this di dalam arrow function mengarah pada object global window
 
-const person = {
-    firstName: "David",
-    lastName: "Donovan ",
-    fullName: () => {
-        console.log(this);
-        return `${this.firstName} ${this.lastName}`;
-    },
-};
+// const person = {
+//     firstName: "David",
+//     lastName: "Donovan ",
+//     fullName: function () {
+//         console.log(this); //menampilkan proses saja
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+
+//     panggilNanti: function () {
+//         setTimeout(function () {
+//             console.log(this);
+//             console.log(this.fullName());
+//         }, 3000);
+//     },
+// };
+// jadi supaya tidak memanggil object window atau global.
+// maka baiknya harus menggunakan regular function saja.
