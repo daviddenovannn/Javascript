@@ -696,16 +696,23 @@
 // jadi supaya tidak memanggil object window atau global.
 // maka baiknya harus menggunakan regular function saja.
 
-// mengatur default valaue pada function 
+// mengatur default valaue pada function
 
-function lemparDadu(sisi) { //(sisi = 6 ) // kalau default
-    return Math.floor(Math.random() * sisi) + 1;
-}
+// function lemparDadu(sisi) { //(sisi = 6 ) // kalau default
+//     return Math.floor(Math.random() * sisi) + 1;
+// }
 // nah ini blm menaru nilai default kedalam parameter nya.
 
 
 //contoh yang nilai defaultny sudah ada
 
-function menyapa(name = 'donovan', greet = 'ganteng') {
-    console.log(`${greet}, ${name}`);
-}
+// function menyapa(name = 'donovan', greet = 'ganteng') {
+//     console.log(`${greet}, ${name}`);
+// }
+
+
+// mengubah nilai array atau object menjadi deret value argument function
+const nomor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+Math.max(nomor) // yang ini maaka output nya akan NaN
+Math.max(...nomor) //mengubah array menjadi deret value argument function
+
