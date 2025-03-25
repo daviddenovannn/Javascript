@@ -712,7 +712,22 @@
 
 
 // mengubah nilai array atau object menjadi deret value argument function
-const nomor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-Math.max(nomor) // yang ini maaka output nya akan NaN
-Math.max(...nomor) //mengubah array menjadi deret value argument function
+// const nomor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Math.max(nomor) // yang ini maaka output nya akan NaN
+// Math.max(...nomor) //mengubah array menjadi deret value argument function
 
+//menggabungkan nilai array dengan array lainnya.
+
+// const arrayAngka = [1, 2, 3, 4, 5];
+// const arrayString = ['david', 'cici', 'coco', 'caca', 'alda ', 'sayangku', 'wkwkwk'];
+
+// const campuran = [...arrayAngka, ...arrayString];
+
+
+// menggabungkan property objek dengan property lainnya
+const user = {
+    name: 'david',
+    email: 'daviddenovannn@gmail.com',
+};
+
+const userDb = { ...user, role: 'Admin' }
