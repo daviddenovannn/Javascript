@@ -595,28 +595,50 @@
 
 //MECOBA METHOD EVERY DAN SOME
 
-// const animes = [
-//     {
-//         title: 'Boku no pico',
-//         year: 1999,
-//         rating: 75,
-//     },
-//     {
-//         title: 'Movie Red One Piece',
-//         year: 2023,
-//         rating: 89,
-//     },
-//     {
-//         title: 'Boku No Hero Academy',
-//         year: 2021,
-//         rating: 85,
-//     },
-//     {
-//         title: 'Naruto Shippuden',
-//         year: 2000,
-//         rating: 90,
-//     },
-// ];
+
+// bongkar property object di dalam function
+
+const animes = [
+    {
+        title: 'Boku no pico',
+        year: 1999,
+        rating: 75,
+    },
+    {
+        title: 'Movie Red One Piece',
+        year: 2023,
+        rating: 89,
+    },
+    {
+        title: 'Boku No Hero Academy',
+        year: 2021,
+        rating: 85,
+    },
+    {
+        title: 'Naruto Shippuden',
+        year: 2000,
+        rating: 90,
+    },
+];
+
+//destruction 
+const anime = animes.map(({ title, year, rating }) => {
+    return `${title}, ${year}, ${rating}`
+})
+
+
+//versi lain
+const user = {
+    name: 'pengguna',
+    email: 'pengguna@gmail.com',
+    role: 'pengunjung'
+}
+
+const userAndRole = ({ name, role }) => {
+    return `${name} adalah ${role}`
+}
+
+userAndRole(user)
 
 // const animeOverrated = animes.some((anime) => anime.year <= 10);
 
@@ -735,7 +757,7 @@
 
 // malas bikin parameter banyak bisa pakai rest params
 
-const nama = ['david', 'donovan', 'morandy', 'samosir', 'aldy', 'aqli', 'iky'];
+// const nama = ['david', 'donovan', 'morandy', 'samosir', 'aldy', 'aqli', 'iky'];
 // const Pemenang = (Platinum, Gold, Silver, ...sisa) => {
 //     console.log(`Rank tertinggi adalah PLATINUM yang dimiliki oleh:  ${Platinum}`);
 //     console.log(`Rank tertinggi kedua adalah GOLD yang dimiliki oleh:  ${Gold}`);
@@ -750,11 +772,14 @@ const nama = ['david', 'donovan', 'morandy', 'samosir', 'aldy', 'aqli', 'iky'];
 
 //destructiing  object
 
-const user = {
-    name: 'david ganteng',
-    email: 'denovan1000@mail.com'
-}
+// const user = {
+//     name: 'david ganteng',
+//     email: 'denovan1000@mail.com'
+// }
 
 // const { name, email } = user; //destructiing object
 // const { name: namae, email } = user; //mengganti nama properti untuk dipanggi
-const { name: namae, email, age = '24' } = user; //menambahkan properti dalam destruc
+// const { name: namae, email, age = '24' } = user; //menambahkan properti dalam destruc
+
+
+
