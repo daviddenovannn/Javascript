@@ -745,5 +745,16 @@ const nama = ['david', 'donovan', 'morandy', 'samosir', 'aldy', 'aqli', 'iky'];
 
 
 //desstructing
-const [satu, dua, tiga,] = nama;
-const [juara, ...peserta] = nama;
+// const [satu, dua, tiga,] = nama;
+// const [juara, ...peserta] = nama;
+
+//destructiing  object
+
+const user = {
+    name: 'david ganteng',
+    email: 'denovan1000@mail.com'
+}
+
+// const { name, email } = user; //destructiing object
+// const { name: namae, email } = user; //mengganti nama properti untuk dipanggi
+const { name: namae, email, age = '24' } = user; //menambahkan properti dalam destruc
