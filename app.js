@@ -725,9 +725,20 @@
 
 
 // menggabungkan property objek dengan property lainnya
-const user = {
-    name: 'david',
-    email: 'daviddenovannn@gmail.com',
-};
+// const user = {
+//     name: 'david',
+//     email: 'daviddenovannn@gmail.com',
+// };
 
-const userDb = { ...user, role: 'Admin' }
+// const userDb = { ...user, role: 'Admin' }
+
+
+// malas bikin parameter banyak bisa pakai rest params
+
+const nama = ['david', 'donovan', 'morandy', 'samosir', 'aldy', 'aqli', 'iky'];
+const Pemenang = (Platinum, Gold, Silver, ...sisa) => {
+    console.log(`Rank tertinggi adalah PLATINUM yang dimiliki oleh:  ${Platinum}`);
+    console.log(`Rank tertinggi kedua adalah GOLD yang dimiliki oleh:  ${Gold}`);
+    console.log(`Rank tertinggi ketiga adalah Silver yang dimiliki oleh:  ${Silver}`);
+    console.log(`Rank lower adalah bronze & iron yang dimiliki oleh:  ${sisa}`);
+}
